@@ -37,9 +37,9 @@ routes.push({
   method: 'POST',
   path: '/new',
   handler(request, reply) {
-    const uniqueID = createHash(hashLen);
+    const uniqueID = createHash(hashLength);
     const newRedir = new Redir({
-      shortUrl: `${baseUrl}/${uniqueID}`,
+      shortUrl: `${base_url}/${uniqueID}`,
       url: request.payload.url,
       createdAt: new Date(),
     });
@@ -68,7 +68,7 @@ routes.push({
   path: '/{hash}',
   handler(request, reply) {
     const query = {
-      shortUrl: `${baseUrl}/${request.params.hash}`,
+      shortUrl: `${base_url}/${request.params.hash}`,
     };
 
     Redir.findOne(query, (err, redir) => {
