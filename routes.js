@@ -1,7 +1,7 @@
 const Joi = require('joi');
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
-const createHash = require('./createHash');
+const createHash = require('./createhash');
 const hashLength = 8;
 
 const base_url = process.env.BASE_URL || 'http://localhost:3000';
