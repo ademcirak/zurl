@@ -1,0 +1,19 @@
+{
+  "name": "zurl",
+  "version": "1.0.0",
+  "description": "URL Shortener",
+  "main": "shortener.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "url",
+    "shortener",
+    "hapi",
+    "mongodb",
+    "node",
+    "javascript"
+  ],
+  "author": "Zack Penka",
+  "license": "ISC"
+}
